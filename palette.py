@@ -95,4 +95,3 @@ def apply_style():
         "figure.dpi":           150,
     })
 
-print("Palette loaded ✅")
