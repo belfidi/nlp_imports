@@ -53,6 +53,12 @@ import gradio as gr   # Build interactive web interfaces for ML models
 # Export
 import dataframe_image as dfi   # Export styled pandas tables as PNG images
 
+# Project utilities (palette + styling) — loaded from GitHub
+import requests as _req
+exec(_req.get("https://raw.githubusercontent.com/belfidi/nlp_imports/main/palette.py").text)
+exec(_req.get("https://raw.githubusercontent.com/belfidi/nlp_imports/main/styling.py").text)
+apply_style()
+
 # Status
 print("All imports loaded ✅")
 print(f"PyTorch:      {torch.__version__}")
